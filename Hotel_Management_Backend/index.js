@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 1814;
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.FRONTEND_URL, // Replace with your frontend URL (localhost or production domain)
+  origin: "https://rahul-hospital-app.netlify.app/", // Replace with your frontend URL (localhost or production domain)
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };

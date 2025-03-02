@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { adminLogin } from '../services/api.jsx';
-
+import './Admin.css';
 const AdminLogin = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -21,6 +21,8 @@ const AdminLogin = () => {
 
     return (
         <form onSubmit={handleSubmit}>
+                    <div className="title login active">Admin Panel</div>
+
             <input
                 type="text"
                 placeholder="Username"
